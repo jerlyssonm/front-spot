@@ -1,0 +1,40 @@
+.home-box{
+    width: 75%;
+    margin: 3em auto;
+    max-width: 800px;
+}
+.form-home{
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+}
+.form-home input[type=text]{
+    width: 80%;
+    padding: 0 1em;
+    outline: none;
+}
+.form-home input[type=submit]{
+    cursor: pointer;
+    padding: 1em 1.5em;
+}
+.spot-box{
+    padding: .5em;
+}
+.spot{
+    background-color: rgb(218, 217, 240);
+    margin-bottom: .5em;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    border-radius: 15px;
+    padding: 1em;
+}
+.spot button{
+    width: 100px;
+    cursor: pointer;
+}
+.page-btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}

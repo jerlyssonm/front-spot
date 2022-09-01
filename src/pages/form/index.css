@@ -1,0 +1,46 @@
+.form{
+    width: 70%;
+    margin: 3em auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 500px;
+}
+.form input{
+    width: 80%;
+    padding: .5em 1em;
+}
+.form textarea {
+    margin-left: 1em;
+    width: 80%;
+}
+.form div{
+    display: flex;
+    justify-content: space-between;
+}
+.localization{
+    display: flex;
+    flex-direction: column;
+}
+.label{
+    font-weight: bold;
+}
+.localization .loc-input{
+    width: 80%;
+    display: flex;
+    gap: 2em;
+}
+.localization .loc-input .uf{
+    cursor: pointer;
+    padding: 0 .2em;
+    width: 50px;
+}
+.form-btn{
+    margin-left: 20%;
+    width: 80%;
+    display: flex;
+}
+.form-btn button{
+    cursor: pointer;
+    
+}
