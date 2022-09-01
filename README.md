@@ -41,5 +41,5 @@ $ http://127.0.0.1:5173/
 ```
 depois disso é só acessar essa rota que voce poderar acessar o site, lembrando que para que use todas suas funcionalidades voce terá que roda junto a esse projeto a api feita especialmente para essa aplicação, sem ela esta rodando em conjunto voce nao terá as funcionalidades totais da aplicação
 
- - [Clique aqui para ir para a API](git@github.com:jerlyssonm/turistics-spots.git)
+ - LINK da API git@github.com:jerlyssonm/turistics-spots.git
 
