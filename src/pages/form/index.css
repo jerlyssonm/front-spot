@@ -42,7 +42,13 @@
     width: 80%;
     display: flex;
 }
-.form-btn button{
+.form-btn .btn{
+    background-color: #746d6d;
     cursor: pointer;
-    
+    padding: .5em 1em;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.btn:last-child{
+    background-color: #50b850;
 }

@@ -23,34 +23,34 @@ export function Form () {
             <br />
             <div>
                 <label className='label'>Nome:</label>
-                <input type="text" name="name" placeholder="Digite o nome do ponto turistico" />
+                <input type="text" name="name" placeholder="Digite o nome do ponto turistico" required />
             </div>
             <div className='localization'>
                 <label className='label'>Localização:</label>
                 <div>
                     <label >UF/Cidade:</label>
                     <div className='loc-input'>
-                        <input name='state' list='ufs'type="text" className='uf'/>
+                        <input name='state' list='ufs'type="text" className='uf'required/>
                         <datalist id="ufs">
                             <option>SP</option>
                             <option>PI</option>
                             <option>MA</option>
                         </datalist>
-                        <input type="text" name='city'/>
+                        <input type="text" name='city'required/>
                     </div>
                 </div>
             </div>
             <div>
                 <label>Referência:</label>
-                <input type="text" name="localization"/>
+                <input type="text" name="localization" required/>
             </div>
             <div>
                 <label className='label'>Descritivo:</label>
-                <textarea name="description" rows={4} />
+                <textarea name="description" rows={4} required/>
             </div>
             <div className='form-btn'>
-                <button>Voltar</button>
-                <input type="submit"/>
+                <a href='/' className='btn'>Voltar</a>
+                <input className='btn' type="submit" value="Cadastrar" required/>
             </div>
         </form>
     )
