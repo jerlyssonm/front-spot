@@ -14,7 +14,6 @@ export function Home() {
             console.error("errous"+ err)
         })
     }, [])
-
     return (
         <main className='home-box'>
             <h1>Inicio</h1>
@@ -22,13 +21,19 @@ export function Home() {
                 <input type="text" placeholder='Buscar ponto por algum termo'/>
                 <input type="submit" value="Buscar!"/>
             </div>
-            <div className='spot-box'>
-                {spots.map((spot) => <Card children={spot} />)}
-            </div>
-            <div className='page-btn'>
-                <a href="">Voltar</a>
-                <a href="">Avançar</a>
-            </div>
+            {
+                (spots.length == 0) ? '' :
+                <>
+                <div className='spot-box'>
+                        {spots.map((spot) => <Card children={spot} />)}
+                </div>
+                {(spots.length >= 5) ?
+                    <div className='page-btn'>
+                        <a href="">Voltar</a>
+                        <a href="">Avançar</a>
+                    </div> : ''}
+                </>
+            }
         </main>
     )
 }
