@@ -6,32 +6,18 @@ import './index.css'
 
 export function Home() {
     const [start, setStart] = useState(0)
-    const [page, setPage] = useState(`?skip=${start}`)
     const [spots, setSpots] = useState([])
 
     const Comsumer = (e)=> {
         const query = e.target.elements.query.value
         e.preventDefault()
-        console.log(query)
-/*         api.get(`/`).then((res) => {
-            console.log(res.data)
+        api.get(`/search?query=${query}`).then((res) => {
             setSpots(res.data)})
-        .catch((err) => {
-            console.error("errous"+ err)
-        }) */
-    }
- /*    const Paginate = (num) => {
-        api.get(`?skip=${num}`).then((res) => {
-            console.log(res.data)
-            setSpots([])
-            setSpots(res.data)})
-            setStart(start+num)
         .catch((err) => {
             console.error("errous"+ err)
         })
-    } */
+    }
     useEffect(()=>{
-        console.log(page)
         const fetch = async () => {
             const result = await api.get(`?skip=${start}`)
                 .then(res => res.data)
