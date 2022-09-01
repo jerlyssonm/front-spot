@@ -17,9 +17,9 @@ export function Form () {
                     <div className='loc-input'>
                         <input name='uf' list='ufs'type="text" className='uf'/>
                         <datalist id="ufs">
-                            <option>sp</option>
-                            <option>ma</option>
-                            <option>bh</option>
+                            <option>SP</option>
+                            <option>PI</option>
+                            <option>MA</option>
                         </datalist>
                         <input type="text" />
                     </div>

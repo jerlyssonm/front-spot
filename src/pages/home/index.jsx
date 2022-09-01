@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import api from '../../services/api'
+import { Card } from './component/CardSpot'
 import './index.css'
 
 
@@ -13,6 +14,7 @@ export function Home() {
             console.error("errous"+ err)
         })
     }, [])
+
     return (
         <main className='home-box'>
             <h1>Inicio</h1>
@@ -21,11 +23,11 @@ export function Home() {
                 <input type="submit" value="Buscar!"/>
             </div>
             <div className='spot-box'>
-                    <div className='spot'>
-                        <h3>{spots[0].name}</h3>
-                        <p>{spots[0].city} - {spots[0].state}</p>
-                        <button>Ver  detalhes</button>
-                    </div>
+                {spots.map((spot) => <Card children={spot} />)}
+            </div>
+            <div className='page-btn'>
+                <a href="">Voltar</a>
+                <a href="">Avançar</a>
             </div>
         </main>
     )

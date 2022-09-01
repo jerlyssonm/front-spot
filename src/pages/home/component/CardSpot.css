@@ -1,0 +1,39 @@
+.spot{
+    background-color: rgb(218, 217, 240);
+    margin-bottom: .5em;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    border-radius: 15px;
+    padding: 1em;
+}
+.spot button{
+    width: 100px;
+    cursor: pointer;
+}
+.modal-overlay {
+    background: #ecececa1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    width: 90%;
+    max-width: 500px;
+    background-color: rgb(235, 232, 232);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .modal-content button {
+    padding: 5px;
+    font-size: large;
+    float: right;
+    cursor: pointer;
+  }
